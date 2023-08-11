@@ -12,3 +12,49 @@ body{
 li{
     list-style: none;
 }
+.sidebar{
+    position: fixed;
+    background-color: #834747;
+    width:50vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar .logo{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .menu{
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+.menu li{
+    justify-content: space-between;
+}
+.upgrade {
+
+    border-radius: 9px;
+    width: 43vh;
+    background-color: rgb(177, 177, 166);
+    color: black;
+    margin-top: 15vh;
+    height: 47vh;
+    font-size: 23px;
+    text-align: center;
+    font-weight: 500;
+      
+}
+.upgrade .btn {
+    width: 30vh;
+    border-radius: 10px;
+    background-color: rgb(2,131,143);
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
