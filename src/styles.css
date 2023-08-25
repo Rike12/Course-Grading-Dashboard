@@ -9,16 +9,17 @@ font-family: 'Roboto', sans-serif;
 body{
     min-height: 100%;
     background-color:black;
+    
 }
 .sidebar{
-    min-width:250px;
+    min-width:382px;
     min-height:100%;
     position: fixed;
     top:0;
     left:0;
     margin: 0;
     padding: 0;
-    background-color: red;
+    background-color: #fff;
 
 }
 .logo{
@@ -64,3 +65,50 @@ body{
     justify-content: center;
     box-shadow: 2px 14px 29px -48px rgba(201,198,198,0.75);
 }
+
+/*----HEADER----*/
+.container{
+    position: absolute;
+    right:0;
+    width: 90vw;
+    height: 100vh;
+    background: #f1f1f1;
+  
+   
+}
+.container .header{
+    position: fixed;
+    right:0;
+    top:0;
+    width:78vw;
+    height:10vh;
+    background: #fff;
+    border: 1px solid red;
+    display: flex;
+    padding:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .header .nav{
+  width:90%;
+  display: flex;
+  align-items: center;
+}
+
+.container .header .nav .search{
+    flex:3;
+    
+}
+.container .header .nav .search input[type=text]{
+    border: none;
+    background: #f1f1f1;
+    padding: 10px;
+    width:80%;
+}
+
+.container .header .nav .search .button{
+    width:40px;
+    height:40px;
+    border: none;
+}
+
