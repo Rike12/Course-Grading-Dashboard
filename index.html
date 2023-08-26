@@ -17,7 +17,8 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <!---CHART----->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
     <title>Course Grading Dashboard</title>
 
 
@@ -32,8 +33,9 @@
             <ul class="nav-links">
 
                 <li>
-                    <div class="category category_color1"></div><a href="#"><img src="src/images/bx_bxs-dashboard.png"
+                    <div class=" category_color1"></div><a href="#"><img src="src/images/bx_bxs-dashboard.png"
                             alt=""> Overview</a>
+                            <div class="category"></div>
                 </li>
 
 
@@ -62,6 +64,7 @@
                     <p>My course dashboard</p>
                 </div>
                 
+                
                 <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
                     <input type="text" placeholder="Search.." name="search2">
                     <img src="./src/images/bx_bx-search.png" alt="">
@@ -74,9 +77,17 @@
                 </div>
             </div>
             </div>
-        </div>
         
-    
+
+        <!----ACTIVITES--->
+  <div class="activites">
+    <div class="chart">
+        <h2>Total Project</h2>
+        <canvas id="myChart" width="100" height="100"></canvas>
+
+  </div>
+    </div>  
+    <script src="./src/script.js"></script>
 </body>
 
 </html>

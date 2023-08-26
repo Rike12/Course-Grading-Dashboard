@@ -56,6 +56,17 @@ body{
     vertical-align: middle;
     display: inline-block;
 }
+.sidebar .nav-links .category_color1 {
+    width: 30px;
+    height: 50px;
+    padding: 10px 5px;
+    margin: 0 0 5px 0;
+    background-color: rebeccapurple;
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    left: 0;
+}
+
 .upgrade{
     width:90%;
     padding: 0 0 5px;
@@ -82,43 +93,42 @@ body{
     position: fixed;
     right:0;
     top:0;
-    width:78vw;
+    width:77%;
     height:10vh;
     background: #fff;
-    border: 1px solid red;
     display: flex;
     padding:10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container .header .nav{
-  width:90%;
+  width:91%;
   display: flex;
   align-items: center;
 }
 
-.form{
-    width:100%;
+.nav form{
     position: relative;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
     
 }
-form.example input {
+.nav .example input {
     padding: 10px;
-    font-size: 17px;
+    font-size: 14px;
     border: 1px solid grey;
-    float: left;
     width: 100%;
     border-radius: 25px;
     background: #f1f1f1;
+    z-index: 1;
   }
   
-  form.example img {
-    float: left;
-    width: 15%;
-    padding: 10px;
+ .nav .example img {
+    right: 60px;
     background: #2196F3;
-    color: white;
-    font-size: 37px;
+    color: white; 
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
