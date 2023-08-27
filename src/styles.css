@@ -85,7 +85,7 @@ body{
     position: relative;
     right:0;
     max-width: 80%;
-    height: 100vh;
+    min-height: 100vh;
     background: #f1f1f1;
   
    
@@ -162,6 +162,7 @@ body{
     padding-top: 40px;
     position: relative;
     margin-left: 35px;
+    margin-bottom: 60px;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -177,4 +178,24 @@ body{
     position: relative;
     border-radius: 15px;
 }
+/*-------*/
+table{
+    width:100%;
+margin-top:40px;
+}
+ table tr {  
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    border-collapse: collapse;
+ }
 
+  th{
+    background: #000;
+    color: #fff;
+
+ }
+ td{
+    margin-left: 20px;
+    text-align: left;
+ }
