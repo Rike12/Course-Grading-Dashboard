@@ -12,11 +12,12 @@ body{
     background-color:black;
     display: flex;
     
+    
 }
 .sidebar{
     min-width:382px;
     min-height:100%;
-    position: fixed;
+    position: absolute;
     top:0;
     left:0;
     margin: 0;
@@ -101,40 +102,60 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container .header .nav{
+.header .nav{
   width:91%;
   display: flex;
+  position: relative;
   align-items: center;
+  justify-content: space-between;
 }
 
-.nav form{
-    position: relative;
+ .nav .search{
+    padding: 5%;
     align-items: center;
-    justify-content: space-between;
-    display: flex;
+    
+    width:100%;
+}
 
+.nav .search-bar{
+    width:100%;
+    max-width: 700px;
+    display: flex;
+    position: relative;
+    align-items: center;  
+    border: 1px solid black;  
+    border-radius: 60px;
+    padding: 0px 20px;
+}
+
+.nav .search-bar input{
+    flex: 1;   
+    padding: 10px 20px;
+    border:0;
     
 }
-.nav .example input {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid grey;
-    width: 100%;
-    border-radius: 25px;
-    background: #f1f1f1;
-    z-index: 1;
-  }
-  
- .nav .example img {
-    right: 60px;
-    background: #2196F3;
-    color: white; 
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
+
+::placeholder{
+    font-weight: 400;
+    color:#000;
+}
+
+.nav .search-bar button img{
+    width:35px;
+    font-weight: 800;
+    color:#000;
+   
+
+}
+
+.nav .search-bar button{
+    border:0;
+    width:60px;
+    height:60px;
+    background-color: #fff; 
+}
+
+/*----percentage circle-----*/
+
+
+
