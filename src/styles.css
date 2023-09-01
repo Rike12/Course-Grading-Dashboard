@@ -17,11 +17,12 @@ body{
 .sidebar{
     min-width:282px;
     min-height:100%;
-    position: a;
+    position: relative;
     top:0;
     left:0;
     margin: 0;
     padding: 0;
+    border:1px solid red;
     background-color: #fff;
 
 }
@@ -110,14 +111,14 @@ body{
 
  .nav .search{
     padding: 5%;
-    align-items: center;
-    
+    align-items: center;   
     width:100%;
 }
 
+
 .nav .search-bar{
-    width:100%;
-    max-width: 700px;
+    width:60%;
+    max-width: 400px;
     display: flex;
     position: relative;
     align-items: center;  
@@ -145,7 +146,9 @@ body{
    
 
 }
-
+.nav .course{
+    padding-top: 20px;
+}
 .nav .search-bar button{
     border:0;
     width:60px;
@@ -153,98 +156,92 @@ body{
     background-color: #fff; 
 }
 
+.header .profile{
+    display: flex;
+    gap:40px;
+}
 /*----percentage circle-----*/
 
 .charty {
-    display: grid;
-    align-items: center;
     
+    position: relative;
+    width: 100%;
+    height:250px;
+    padding-bottom: 40px;
     
+       
+}
+.c1, .c2, .c3{
+    width: 35%;
+}
+.pad{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    align-content: center;
+    justify-content: space-evenly;
+    
+
 }
 
 .chart1 {
-    margin-bottom: 20px;
-    margin-left: 70px;
-    width:250px;
-    height:150px;
-    justify-content: space-between;
+    padding-top: 30px;
+    width:30%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    height:200px;
+    border-radius: 20px;
     background-color: rgba( 0 0 0 / 0);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .chart2 {
-    margin-bottom: 20px;
-    margin-left: 70px;
-    width:250px;
-    height:150px;
+    padding-top: 30px;
+    width:30%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    height:200px;
+    border-radius: 20px;
     background-color: rgba( 0 0 0 / 0);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 .chart3{
-    margin-bottom: 20px;
-    margin-left: 70px;
-    width:250px;
-    height:150px;
+    padding-top: 30px;
+    margin-left: 10px;
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    height:200px;
     background-color: rgba( 0 0 0 / 0);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
-.chart1 h3 {
+.pad .percent{
+    font-size: 20px;
     position: absolute;
-    margin-left: 140px;
-    top: 30px;
+    margin-left: 50px;
+    top: 93px;
+    font-weight: 600;
 }
 
-.chart1 h6 {
-    position: absolute;
-    margin-left: 140px;
-    top: 60px;
+.daily{
+    padding-top: 30px;
+    padding-right: 80px ;
+
 }
 
-.chart1 h4 {
-    position: absolute;
-    margin-left: 45px;
-    top: 45px;
+.daily h3{
+    font-size: 20px;
+    font-weight: 700;
+    
 }
-
-.chart2 h3 {
-    position: absolute;
-    margin-left: 140px;
-    top: 200px;
-}
-
-.chart2 h6 {
-    position: absolute;
-    margin-left: 140px;
-    top: 230px;
-}
-
-.chart2 h4 {
-    position: absolute;
-    margin-left: 45px;
-    top: 215px;
-}
-
-.chart3 h3 {
-    position: absolute;
-    margin-left: 140px;
-    top: 370px;
-}
-
-.chart3 h6 {
-    position: absolute;
-    margin-left: 140px;
-    top: 400px;
-}
-
-.chart3 h4 {
-    position: absolute;
-    margin-left: 45px;
-    top: 385px;
-}
-
-
 
 /*----TABLE---*/
 /* Style for the table */
