@@ -15,7 +15,7 @@ body{
     
 }
 .sidebar{
-    min-width:282px;
+    min-width:350px;
     min-height:100%;
     position: relative;
     top:0;
@@ -71,8 +71,9 @@ body{
 
 .upgrade{
     width:90%;
-    padding: 0 0 5px;
-    margin:10px;
+    padding-right: 30px;
+    margin-top:20rem;
+    margin-left: 10px;
     border-radius: 10px;
     align-items: center;
     background-color: #edececfb;
@@ -85,7 +86,7 @@ body{
 .container{
     position: relative;
     right:0;
-    max-width: 80%;
+    min-width: 80%;
     min-height: 100vh;
     background: #f1f1f1;
   
@@ -281,8 +282,8 @@ body{
     margin-left: 90px;
     border-radius: 20px;
     color: #fff;
-    height: 250px;
-    padding: 10px;
+    height: 220px;
+    padding-bottom: 60px;
     margin-bottom: 50px;
  }
 
@@ -302,9 +303,9 @@ body{
     font-size: 8px;
  }
  .banner button{
-    margin-top: 20px;
+    margin-top: 15px;
     width:300px;
-    padding: 20px;
+    padding: 15px;
     font-size: 18px;
     color:rgb(148, 77, 88);
     font-weight: 700;
