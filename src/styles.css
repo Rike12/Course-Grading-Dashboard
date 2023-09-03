@@ -8,6 +8,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 body{
+    max-width: 100%;
     min-height: 100vh;
     background-color:black;
     display: flex;
@@ -83,23 +84,25 @@ body{
 }
 
 /*----HEADER----*/
-.container{
+.mycontainer{
     position: relative;
-    right:0;
-    min-width: 80%;
+    padding: 0;
+    width: 100%;
+    border: 1px solid blue;
     min-height: 100vh;
     background: #f1f1f1;
   
    
 }
-.container .header{
+.mycontainer .header{
     
-    right:0;
-    top:0;
-    min-width: 100%;
+    width: 100%;
+    width:100%;
     background: #fff;
+    border: 1px solid green;
     display: flex;
     padding:10px;
+    margin: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -285,17 +288,15 @@ body{
     height: 220px;
     padding-bottom: 60px;
     margin-bottom: 50px;
+    border: 1px solid red;
  }
 
  .banner .text{
-    margin-left: 90px;
-    margin-top: 30px;
+    margin-left: 70px;
+    margin-top: 20px;
+   
  }
- .banner .h1{
-    
-    font-size: 14px;
-    
- }
+
 
  .banner p{  
     margin: 0;
@@ -306,19 +307,25 @@ body{
     margin-top: 15px;
     width:300px;
     padding: 15px;
-    font-size: 18px;
+    font-size: 18px; 
     color:rgb(148, 77, 88);
     font-weight: 700;
     border-radius: 60px;
- }
- .lady-text{
-    display: flex;
+}
+.lady-text{
+    display: inline-block;
+}
+ .lady-text .text{
+    display:inline-block;
+    width: 50%;
+    
  }
  .lady-text .lady{
-    z-index: 2;
+    display:inline-block;
     position: relative;
-    left: 70px;
-    top: -55px;
+    right: 60px;
+    bottom: 120px;
+    width:20%;
 
  }
    
