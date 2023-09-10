@@ -47,7 +47,7 @@
 
                 <li><a href="#"><img src="src/images/fe_logout.png" alt=""> Logout</a></li>
             </ul>
-
+            <!---------------------------------UPGRADE-------------------------------------------->
             <div class="upgrade">
                 <img src="src/images/Upgrade illustration.png" alt="">
                 
@@ -55,37 +55,46 @@
                 
                 <button type="button" class="btn btn-outline-dark">Upgrade</button>
             </div>
+            <!-------=======================END OF UPGRADE========================================-->
         </div>
 
+        <!---------------------------------------------------MYCONTAINER ------------------------->
         <div class="mycontainer">
+            <!------------------------HEADER----------------------------------->
             <div class="header">
                 <div class="nav">
                 <div class="course">
                     <h5>My course dashboard</h5>
                 </div>
-                <!--SEARCH BAR-->
-                 
-                <form class="search-bar" action="#" s>
-                    <input type="text" placeholder="You are looking..." name="search2" >
-                    <button><img src="./src/images/bx_bx-search.png" alt=""></button>    
+
+                <!------------------------------SEARCH BAR---------------------------> 
+                <form class="search-bar" action="#">
+                    <p>"You are looking..." </p>
+                    <img src="./src/images/bx_bx-search.png" alt="">   
                 </form>
-            <!----PROFILE----->
+                <!-----======================== END OF SEARCH BAR=======================================-->
+            <!------------------------------------PROFILE-------------------------------->
                     <div class="profile">
                     <img src="./src/images/codicon_bell-dot.png" alt="bell with dot" class="bell">
                     
                 <img src="./src/images/User profile.png" alt="user profile" class="user_profile">
     
                 </div>
+                <!---------================END OF PROFILE =======================-->
            
             </div>
         
             </div>
+            <!----=====================END OF HEADER=======================================-->
+        
+        
 
          
-        <!----ACTIVITES--->
+        <!-----------------------------------DOUGHNUT CHART.JS---------------------------->
 
         <div class="charty">
             <div class="pad">
+                <!-----DOUGHNUT 1------>
             <div class="chart1">
                 <div class="c1">
                     <canvas id="myChart"></canvas>
@@ -97,7 +106,9 @@
                     <p>Activities</p></div>
                 
             </div>
+            <!----==========------->
     
+            <!------- DOUGHNUT 2------------>
             <div class="chart2">
                 <div class="c2">
                     <canvas id="myChart2"></canvas>
@@ -110,7 +121,9 @@
                 </div>
                 
             </div>
-            
+            <!------=============-->
+
+            <!-------------DOUGHNUT 2------------->
             <div class="chart3">
                 <div class="c3">
                     <canvas id="myChart3"></canvas>
@@ -122,8 +135,11 @@
                     <p>Activities</p>
                 </div>
             </div>
+            <!-----=======================----->
         </div>
         </div>
+
+<!-----============================ END OF CHART.JS =====================================-->
 
 <!---------------------------TABLE SECTION-------------------------->
    <!---TABLE HEAD--->
@@ -246,8 +262,8 @@
     <!---================================----->
   </div>
   <!----------===================== END OF BANNER ==========================-->
-
-
+        </div>
+    <!------=================== END OF MYCONTAINER===================================-->
   <!---------------------LINKING JS------------------------->
    <script src="./src/script.js"></script>
    
