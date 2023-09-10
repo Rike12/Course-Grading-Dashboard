@@ -9,7 +9,7 @@ font-family: 'Roboto', sans-serif;
 
 body{
     max-width: 100%;
-    min-height: 100vh;
+    max-height: 100%;
     background-color:black;
     display: flex;
     
@@ -89,7 +89,7 @@ body{
     padding: 0;
     width: 100%;
     border: 1px solid blue;
-    min-height: 100vh;
+    height: 100%;
     background: #f1f1f1;
   
    
@@ -285,47 +285,44 @@ body{
     margin-left: 90px;
     border-radius: 20px;
     color: #fff;
-    height: 220px;
-    padding-bottom: 60px;
-    margin-bottom: 50px;
+    height: 200px; 
+    margin-bottom: 20px;
     border: 1px solid red;
  }
 
  .banner .text{
-    margin-left: 70px;
-    margin-top: 20px;
+    margin-left: 60px;
+    margin-top: 14px;
+    width: 70%;
+    border: 1px solid red;
    
  }
-
-
+ .banner .text h1{
+    font-size: 37px;
+    letter-spacing: 4;
+    font-weight: 700;
+ }
  .banner p{  
     margin: 0;
-    font-weight: 100;
-    font-size: 8px;
+    font-size: 10px;
  }
+
  .banner button{
     margin-top: 15px;
-    width:300px;
+    width:220px;
     padding: 15px;
     font-size: 18px; 
     color:rgb(148, 77, 88);
     font-weight: 700;
     border-radius: 60px;
-}
-.lady-text{
-    display: inline-block;
-}
- .lady-text .text{
-    display:inline-block;
-    width: 50%;
-    
  }
- .lady-text .lady{
-    display:inline-block;
-    position: relative;
-    right: 60px;
-    bottom: 120px;
-    width:20%;
+ .banner .lady{
+    height:100px;
+    bottom:160px;
+    position: absolute;
+    right:40px;
 
+
+      
  }
    
