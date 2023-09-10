@@ -1,12 +1,13 @@
+/*--------- UNIVERSAL SELECTOR-----------*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inconsolata', monospace;
-font-family: 'Nunito', sans-serif;
-font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    
 }
 
+/*--------- BODY-----------*/
 body{
     max-width: 100%;
     max-height: 100%;
@@ -15,6 +16,7 @@ body{
     
     
 }
+/*--------- SIDE BAR-----------*/
 .sidebar{
     min-width:350px;
     min-height:100%;
@@ -23,17 +25,17 @@ body{
     left:0;
     margin: 0;
     padding: 0;
-    border:1px solid red;
     background-color: #fff;
 
 }
+/*--------- LOGO-----------*/
 .logo{
     display: block;
     margin-bottom: 30px;
     text-align: center;
     justify-content: center;
 }
-
+/*--------- SIDE LINKS-----------*/
 .nav-links{
     list-style: none;
     width: 100%;
@@ -52,29 +54,31 @@ body{
     color:#fff;
     text-decoration: none;
     margin-left: 25px;
-   
-    
+      
 }
 .nav-links img {
     vertical-align: middle;
     display: inline-block;
 }
-.sidebar .nav-links .category_color1 {
+.sidebar .nav-links .category {
+
+    background-color: #974a6d;
     width: 30px;
-    height: 50px;
-    padding: 10px 5px;
-    margin: 0 0 5px 0;
-    background-color: rebeccapurple;
+    height: 55px;
     border-radius: 0px 10px 10px 0px;
     position: absolute;
     left: 0;
+    top:63px;
+
 }
+
 
 /*----------------------------------UPGRADE-----------------------------*/
 .upgrade{
     width:90%;
     padding-right: 30px;
     margin-top:20rem;
+    margin-bottom: 20px;
     margin-left: 10px;
     border-radius: 10px;
     align-items: center;
@@ -83,6 +87,23 @@ body{
     justify-content: center;
     box-shadow: 2px 14px 29px -48px rgba(201,198,198,0.75);
 }
+.upgrade button{
+    width:200px;
+    padding: 15px;
+    font-size: 18px; 
+    background-color:teal;
+    color: #fff;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+ 
+}
+
+/*----------=========== END OF UPGRADE===============*/
+
+    
+/*---======================================= END OF SIDE BAR =========================================-------*/    
 
 /*----------------------------------CONTAINER-----------------------------*/
 .mycontainer{
@@ -160,13 +181,13 @@ body{
 }
 .c1, .c2, .c3{
     width: 35%;
-    margin-left: 20px;
+   
 }
 .pad{
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 26px;
     align-content: center;
     justify-content: space-evenly;
     
@@ -214,8 +235,8 @@ body{
 .pad .percent{
     font-size: 20px;
     position: absolute;
-    margin-left: 35px;
-    top: 73px;
+    margin-left: 30px;
+    top: 75px;
     font-weight: 600;
 }
 
