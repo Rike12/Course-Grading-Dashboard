@@ -287,14 +287,13 @@ body{
     color: #fff;
     height: 200px; 
     margin-bottom: 20px;
-    border: 1px solid red;
+    
  }
 
  .banner .text{
     margin-left: 60px;
     margin-top: 14px;
-    width: 70%;
-    border: 1px solid red;
+    width: 80%;
    
  }
  .banner .text h1{
@@ -304,7 +303,7 @@ body{
  }
  .banner p{  
     margin: 0;
-    font-size: 10px;
+    font-size: 9px;
  }
 
  .banner button{
@@ -317,8 +316,8 @@ body{
     border-radius: 60px;
  }
  .banner .lady{
-    height:100px;
-    bottom:160px;
+    
+    bottom:20px;
     position: absolute;
     right:40px;
 
