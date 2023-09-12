@@ -337,4 +337,68 @@ body{
  }
 
   /*----------------------------------------- MEDIA QUERY--------------------------------------------*/
+  /*----------------------------------------- MEDIA QUERY--------------------------------------------*/
+  
+  @media (max-width: 600px){
+    
+    body{
+        display:grid;
+        max-width: 50%;
+    }
+    .menu{
+        display:none
+    }
+    .sidebar {
+        display:60%; 
+        justify-content: center;
+    }
+    .upgrade{
+    max-width:90%;
+    padding-left: 40px;
+    margin-top:90px;
+    margin-bottom: 80px;
+    margin-left: 70px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #edececfb;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 2px 14px 29px -48px rgba(201,198,198,0.75);
+}
+.upgrade p{
+    font-size: 18px;
+    font-weight: 800;
+}
+.upgrade button{
+    max-width:200px;
+    padding: 15px;
+    font-size: 18px; 
+    background-color:teal;
+    color: #fff;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+ 
+}
    
+  @media (min-width: 600px) {
+    .sidebar {
+        display:250px ; 
+    }
+    .hamburger{
+        display:none
+    }
+   
+   
+}
+@media (min-width: 768px){
+   
+    .menu{
+        display:none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+  }

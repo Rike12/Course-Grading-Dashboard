@@ -1,3 +1,38 @@
+//HAMBURGER
+const linkmenu = document.getElementsByClassName('menu')[0]
+
+const hammenu = document.querySelector('.hamburger')
+
+
+
+hammenu.addEventListener('click', () => {
+
+   
+
+  var links = document.getElementsByClassName("menu");
+
+  Array.from(links).forEach((x) => {
+
+    if (x.style.display == "none") {
+
+      x.style.display = "block";
+
+    } else {
+
+      x.style.display = "none";
+
+    }
+
+  })
+
+})
+
+
+
+
+//CHART.JS
+
+
 const ctx = document.getElementById('myChart');
   
 new Chart(ctx, {
