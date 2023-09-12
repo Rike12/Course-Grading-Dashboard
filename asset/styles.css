@@ -9,7 +9,7 @@
 
 /*--------- BODY-----------*/
 body{
-    max-width: 100%;
+    min-width: 100%;
     max-height: 100%;
     background-color:black;
     display: flex;
@@ -18,8 +18,8 @@ body{
 }
 /*--------- SIDE BAR-----------*/
 .sidebar{
-    min-width:350px;
-    min-height:100%;
+    max-width:350px;
+    max-height:100%;
     position: relative;
     top:0;
     left:0;
@@ -34,6 +34,20 @@ body{
     margin-bottom: 30px;
     text-align: center;
     justify-content: center;
+}
+/*--------- HAMBURGER-----------*/
+.hamburger {
+    position: absolute;
+    top:10px;
+    right:5px;
+}
+
+.line {
+    width:15px;
+    height:5px;
+    background-color:black;
+    margin:2px;
+
 }
 /*--------- SIDE LINKS-----------*/
 .nav-links{
@@ -180,7 +194,7 @@ body{
        
 }
 .c1, .c2, .c3{
-    width: 35%;
+    width: 40%;
    
 }
 .pad{
@@ -235,8 +249,8 @@ body{
 .pad .percent{
     font-size: 20px;
     position: absolute;
-    margin-left: 30px;
-    top: 75px;
+    margin-left: 40px;
+    top: 84px;
     font-weight: 600;
 }
 
@@ -335,70 +349,58 @@ body{
 
       
  }
-
-  /*----------------------------------------- MEDIA QUERY--------------------------------------------*/
-  /*----------------------------------------- MEDIA QUERY--------------------------------------------*/
+ /*----------------------------------------- MEDIA QUERY--------------------------------------------*/
   
   @media (max-width: 600px){
     
     body{
         display:grid;
-        max-width: 50%;
+        width: 100%;
     }
-    .menu{
-        display:none
-    }
-    .sidebar {
-        display:60%; 
+   
+    .sidebar{
+        width:280px;
+        align-content:center ;
         justify-content: center;
     }
+    
+    .menu{
+        display:none;
+        margin-left:60px;
+        width:100%;
+    }
+    .sidebar .nav-links .category {
+
+        background-color: #974a6d;
+        width: 30px;
+        height: 55px;
+        border-radius: 0px 10px 10px 0px;
+        position: absolute;
+        margin-left:60px;
+        top:56px;
+    }
+    
+    
     .upgrade{
-    max-width:90%;
-    padding-left: 40px;
-    margin-top:90px;
-    margin-bottom: 80px;
-    margin-left: 70px;
-    border-radius: 10px;
-    align-items: center;
-    background-color: #edececfb;
-    text-align: center;
-    justify-content: center;
-    box-shadow: 2px 14px 29px -48px rgba(201,198,198,0.75);
-}
+        width:100%;
+        margin-top:90px;
+        margin-bottom: 20px;
+        margin-left: 55px;
+        padding-left: 35px;
+        border-radius: 10px;
+        align-items: center;
+        background-color: #edececfb;
+        text-align: center;
+        justify-content: center;
+        box-shadow: 2px 14px 29px -48px rgba(201,198,198,0.75);
+        }
 .upgrade p{
     font-size: 18px;
     font-weight: 800;
+    
 }
-.upgrade button{
-    max-width:200px;
-    padding: 15px;
-    font-size: 18px; 
-    background-color:teal;
-    color: #fff;
-    font-weight: 700;
-    border-style: none;
-    border-radius: 10px 10px 10px 10px;
-    margin-bottom: 20px;
- 
-}
-   
-  @media (min-width: 600px) {
-    .sidebar {
-        display:250px ; 
-    }
-    .hamburger{
-        display:none
-    }
-   
-   
-}
-@media (min-width: 768px){
-   
-    .menu{
-        display:none;
-    }
-    .hamburger {
-        display: block;
-    }
+
+.mycontainer header{
+    width:50px;
 }
   }
