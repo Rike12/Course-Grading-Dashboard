@@ -249,8 +249,8 @@ body{
 .pad .percent{
     font-size: 20px;
     position: absolute;
-    margin-left: 40px;
-    top: 84px;
+    margin-left: 45px;
+    top: 89px;
     font-weight: 600;
 }
 
@@ -400,7 +400,37 @@ body{
     
 }
 
-.mycontainer header{
-    width:50px;
+.mycontainer{
+    width:100%;;
 }
+.mycontainer .header{
+        width:550px;
+        display:grid;
+        
+    }
+    .header .nav{
+        width:52%;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .course h5{
+         font-size: 15px;
+         padding-top: 5px;
+         
+      }
+      .nav .search-bar{
+          width:100%;
+          max-width: 370px;
+          display: flex;
+          justify-content: space-between;
+          align-items:center;  
+          border: 1px solid ;
+          border-style: ridge;
+    
+      
+      }
+    
+    
+      
+    
   }
