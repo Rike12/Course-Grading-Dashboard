@@ -18,8 +18,8 @@ body{
 }
 /*--------- SIDE BAR-----------*/
 .sidebar{
-    max-width:350px;
-    max-height:100%;
+    width:350px;
+    height:100%;
     position: relative;
     top:0;
     left:0;
@@ -246,7 +246,21 @@ body{
     
 }
 
-.pad .percent{
+.chart1 .percent1{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 45px;
+    top: 89px;
+    font-weight: 600;
+}
+.chart2 .percent2{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 45px;
+    top: 89px;
+    font-weight: 600;
+}
+.pad .percent3{
     font-size: 20px;
     position: absolute;
     margin-left: 45px;
@@ -354,93 +368,155 @@ body{
       
  }
  /*----------------------------------------- MEDIA QUERY--------------------------------------------*/
- @media (min-width:786px){
-    .hamburger{
-        display:none;
-    }
-   
- }
-  @media (max-width:786px){
+@media (max-width:480px) {
     body{
-        max-width: 100px;
-    display: grid;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+       
     }
+      /*--------------------------------- SIDEBAR----------------------------- */
     .sidebar{
-        align-content:center ;
-        justify-content: center;
+        max-height: 100%;
+        
     }
     .hamburger{
         display:block;
-    }
-    menu{
-        display: none;
-    }
+       }
+   .menu{
+    display:none;
+   }
+   .sidebar .nav-links .category{
+    left: 0;
+    height:51px;
+    top:60px;
+   }
+   
+   .sidebar .upgrade{
+    margin-top: 10px;
+    margin-left: 30px;
+   }
+     /*--------------------------------- HEADER----------------------------- */
+   .mycontainer .header{
+    width: 100%;
+    height: 100%;
     
-    .upgrade{
-        width:100%;
-        margin-top:90px;
-        margin-bottom: 20px;
-        margin-left: 55px;
-        padding-left: 35px;
-        border-radius: 10px;
-        align-items: center;
-        background-color: #edececfb;
-        text-align: center;
-        justify-content: center;
-        box-shadow: 2px 14px 29px -48px rgba(201,198,198,0.75);
-        }
-.upgrade p{
-    font-size: 18px;
-    font-weight: 800;
-    
-}
+   }
+   .header .nav{
+    margin: 10px;
+  
+   }
+   .course h5{
+    font-weight: 700;
+   }
 
-.mycontainer {
-    padding: 20px;
-    max-width:100%;
-}
+  /*--------------------------------- CHART.JS----------------------------- */
 
-    .header .nav{
-        width:52%;
-        align-items: center;
-        justify-content: space-evenly;
-      }
-      .course h5{
-         font-size: 15px;
-         padding-top: 5px;
-         
-      }
-      .nav .search-bar{
-    
-          max-width: 370px;
-          display: flex;
-          justify-content: space-between;
-          align-items:center;  
-          border: 1px solid ;
-          border-style: ridge;
-    
-      
-      }
-      .nav-links li {
-        display: block;
+   .charty{ 
+    height:100%;
+    margin:0 auto;
+   }
+
+    .pad {
+        flex-direction: row;
+           
     }
-    
-      
-    .upgrade{
-        max-width: 250px;
+
+    .chart1,
+    .chart2,
+    .chart3 {
+        display:flex;
+        flex-direction: column;
+        min-width: 30%;
+        margin: 10px;
+        padding:10px;
+        
+        
     }
-    .charty {
-    
-        display:grid;
-        width: 100%;
+
+    .c1, .c2, .c3{
+        
+        margin-left:2px;
+        min-width:100px;
        
     }
-  
-    .pad .percent{
-        margin-left: 56px;
-        font-size: 40px;
-        margin-top: 30px;
-    }
-   
-}
 
+    .c1 .percent1,
+    .c2 .percent2,
+    .c3 .percent3
+      {
+     top:55px;
+     margin-left: 30px;
+     font-size: 18px;
+     font-weight: 700;
+        
+    }
+
+    .daily h3{
+        font-weight: 900;
+    }
+    
+    .daily p{
+        font-size: 20px;
+    }
+    
+    .daily {
+        padding-right: 0;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+      /*--------------------------------- TABLE----------------------------- */
+    .tablecolumn{
+        min-width:80%;
+        margin: 10px;
+        position: relative;
+    }
+    .table th, .table td {
+        padding: 2px;
+    }
+    .table td{
+        font-size:15px;
+        font-weight: 700;
+    }
+ /*--------- BANNER  -----------*/
+    .banner{
+        max-width: 100%;
+        max-height:100%;
+        margin: 10px;
+    }
+    .banner .text{
+        margin-left: 10px;
+        margin-top: 14px;
+        width: 55%;
+}
+ /*--------- BANNER h1 TAG -----------*/
+    .banner .text h1{
+       font-size: 20px;
+       letter-spacing:6 ;
+       font-weight: 500;
+ }
+ /*--------- BANNER PTAG -----------*/
+ .banner p{  
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+   
+ }
+ /*--------- BANNER BUTTON -----------*/
+ .banner button{
+    margin-top: 6px;
+    width:170px;
+    padding:3px;
+    font-size: 20px;  
+    font-weight: 700;
+   
+ }
+ /*--------- BANNER FEMALE IMAGE -----------*/
+ .banner .lady{ 
+    bottom:10px;
+    position: absolute;
+    left:75px;
+     
+ }
+}
