@@ -40,6 +40,7 @@ body{
     position: absolute;
     top:10px;
     right:5px;
+    display:none
 }
 
 .line {
@@ -91,9 +92,9 @@ body{
 .upgrade{
     width:90%;
     padding-right: 30px;
-    margin-top:18rem;
+    margin-top:20rem;
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 12px;
     border-radius: 10px;
     align-items: center;
     background-color: #edececfb;
@@ -141,7 +142,7 @@ body{
 }
 
 .header .nav{
-  width:92%;
+  width:100%;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -285,7 +286,7 @@ body{
 /*------------------------------TABLE------------------------------ */
 
 .tablecolumn {
-   
+    width:98%;
     border-style:none;   
     box-shadow: 0 0 0  #666;
     border-radius: 30px;
@@ -321,7 +322,7 @@ body{
  /*---------------------------------BANNER--------------------------------*/
  .banner{
     border:1px solid black;
-    width: 95%;
+    max-width: 95%;
     background: #000;
     margin-left: 30px;
     border-radius: 20px;
@@ -339,7 +340,7 @@ body{
  }
  /*--------- BANNER H1 -----------*/
  .banner .text h1{
-    font-size: 37px;
+    font-size: 45px;
     letter-spacing: 8;
     font-weight: 700;
  }
@@ -362,7 +363,7 @@ body{
  .banner .lady{ 
     bottom:20px;
     position: absolute;
-    right:40px;
+    right:10px;
 
 
       
@@ -521,321 +522,3 @@ body{
  }
 }
 
-/*-------------------------------- Max WIDTH 768---------------------------*/
-@media (min-width:768px) {
-    body{
-        max-height:80%;
-    }
-    .sidebar{
-        max-width: 30%;
-    }
-    .logo{
-        display:block;
-    }
-    .hamburger{
-        display:none;
-    }
-    .sidebar .nav-links .category{
-        left: 0;
-        height:51px;
-        top:60px;
-       }
-       .upgrade{
-        margin-top: 20rem;
-       }
-
-       /*------------------CONTAINER -------------*/
-       .mycontainer{
-        max-width: 70%;
-        max-height: 60%;
-       }
-
-       .mycontainer .header{   
-        max-width:100%;
-        height:68px;
-        margin: 0;
-        background: #fcf9f9;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    
-    .header .nav{
-      width:100%;
-      align-items: center;
-      display: flex;
-      justify-content: space-around;
-    }
-    .course h5{
-       font-size: 20px;
-       padding-top: 5px;
-       
-    }
-    .nav .search-bar{
-        width:50%;
-        width: 200px;
-        height: 50px;
-        padding: 10px ;
-        display: flex;
-        justify-content: space-around;
-      
-    
-    }
-    .header .profile{
-        display: flex;
-        padding-left: 15px;
-        gap:5px;
-    }
-    /*--------------------------------- CHART.JS----------------------------- */
-
-   .charty{ 
-    height:100%;
-    margin:0 auto;
-   }
-
-    .pad {
-        flex-direction: row;
-           
-    }
-
-    .chart1,
-    .chart2,
-    .chart3 {
-        display:flex;
-        flex-direction: column;
-        min-width: 30%;
-        margin: 10px;
-        padding:10px;
-        
-        
-    }
-
-    .c1, .c2, .c3{
-        
-        margin-left:2px;
-        min-width:100px;
-       
-    }
-
-    .c1 .percent1,
-    .c2 .percent2,
-    .c3 .percent3
-      {
-     top:55px;
-     margin-left: 30px;
-     font-size: 18px;
-     font-weight: 700;
-        
-    }
-
-    .daily h3{
-        font-weight: 900;
-    }
-    
-    .daily p{
-        font-size: 20px;
-    }
-    
-    .daily {
-        padding-right: 0;
-        text-align: center;
-        padding-top: 20px;
-    }
-          /*--------------------------------- TABLE----------------------------- */
-          .tablecolumn{
-            min-width:80%;
-            margin: 10px;
-            position: relative;
-        }
-        .table th, .table td {
-            padding: 2px;
-        }
-        .table td{
-            font-size:15px;
-            font-weight: 700;
-        }
-        /*--------- BANNER  -----------*/
-    .banner{
-        max-width: 100%;
-        max-height:100%;
-        margin: 10px;
-    }
-    .banner .text{
-        margin-left: 20px;
-        margin-top: 14px;
-        max-width:75%;
-}
- /*--------- BANNER h1 TAG -----------*/
-    .banner .text h1{
-       font-size: 30px;
-       letter-spacing:6 ;
-       font-weight: 500;
- }
- /*--------- BANNER PTAG -----------*/
- .banner p{  
-    margin: 0;
-    font-size: 13px;
-    font-weight: 400;
-   
- }
- /*--------- BANNER BUTTON -----------*/
- .banner button{
-    margin-top: 9px;
-    width:170px;
-    padding:3px;
-    font-size: 20px;  
-    font-weight: 700;
-   
- }
- /*--------- BANNER FEMALE IMAGE -----------*/
- .banner .lady{ 
-    bottom:10px;
-    position: absolute;
-    left:39%;
-     
- }
-
-}
-@media (min-width:1440px){
-body{
-    width:100%;
-    max-height:70%;
-}
-.mycontainer{
-    max-width:100%;
-    height:50%;
-}
-.header .nav{
-    width:100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-  }
-  .course h5{
-     font-size: 20px;
-     padding-top: 5px;
-     margin-left: 30px;
-     
-  }
-  .nav .search-bar{
-      width:100%;
-      width: 300px;
-      height: 50px;
-      padding: 10px ;
-      display: flex;
-      justify-content: space-around;
-    
-  
-  }
-  .header .profile{
-      display: flex;
-      padding-left: 15px;
-      gap:25px;
-  }
-  /*--------------------------------- CHART.JS----------------------------- */
-
-  .charty{ 
-    height:100%;
-    margin:0 auto;
-    padding-bottom: 40px;
-   }
-
-    .pad {
-        flex-direction: row;
-           
-    }
-
-    .chart1,
-    .chart2,
-    .chart3 {
-        display:flex;
-        flex-direction: row;
-        min-width: 30%;
-        padding:10px;
-        
-        
-    }
-
-    .c1, .c2, .c3{
-        
-        margin-left:20px;
-        min-width:100px;
-       
-    }
-
-    .c1 .percent1,
-    .c2 .percent2,
-    .c3 .percent3
-      {
-     top:80px;
-     margin-left: 46px;
-     font-size: 18px;
-     font-weight: 700;
-        
-    }
-
-    .daily h3{
-        font-weight: 900;
-    }
-    
-    .daily p{
-        font-size: 20px;
-    }
-    
-    .daily {
-        padding-right: 0;
-        text-align: center;
-        padding-top: 20px;
-    }
-          /*--------------------------------- TABLE----------------------------- */
-          .tablecolumn{
-            min-width:80%;
-            margin: 10px;
-            position: relative;
-        }
-        .table th, .table td {
-            padding: 2px;
-        }
-        .table td{
-            font-size:15px;
-            font-weight: 700;
-        }
-        /*--------- BANNER  -----------*/
-    .banner{
-        min-width: 100%;
-        height:100%;
-        margin: 10px;
-    }
-    .banner .text{
-        margin-left: 20px;
-        margin-top: 14px;
-        min-width:45%;
-}
- /*--------- BANNER h1 TAG -----------*/
-    .banner .text h1{
-       font-size: 30px;
-       letter-spacing:6 ;
-       font-weight: 500;
- }
- /*--------- BANNER PTAG -----------*/
- .banner p{  
-    margin: 0;
-    font-size: 13px;
-    font-weight: 400;
-   
- }
- /*--------- BANNER BUTTON -----------*/
- .banner button{
-    margin-top: 9px;
-    width:170px;
-    padding:3px;
-    font-size: 20px;  
-    font-weight: 700;
-   
- }
- /*--------- BANNER FEMALE IMAGE -----------*/
- .banner .lady{ 
-    bottom:10px;
-    position: absolute;
-    right:39%;
-     
- }
-}
